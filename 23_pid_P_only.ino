@@ -16,9 +16,9 @@
                           // Setting EMA to 1 effectively disables EMA filter.
 
 // Servo adjustment
-#define _DUTY_NEU 1260  // Servo angle: 0 degree
-#define _DUTY_MAX 1700  // Servo angle: D degree
-#define _DUTY_MIN 820  // Servo angle: E degree
+#define _DUTY_NEU 1340  // Servo angle: 0 degree
+#define _DUTY_MAX 1800  // Servo angle: D degree
+#define _DUTY_MIN 840  // Servo angle: E degree
 #define _SERVO_ANGLE_DIFF 30 // Replace with |D - E| degree
 #define _SERVO_SPEED 1000 // servo speed limit (unit: degree/second)
 
@@ -60,7 +60,7 @@ void setup()
   Serial.begin(1000000);
 
   // Set a target distance
-  dist_target = 155; // the center of the rail (unit: mm)
+  dist_target = 175; // the center of the rail (unit: mm)
   
 }
   
